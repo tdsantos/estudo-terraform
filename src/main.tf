@@ -55,3 +55,9 @@ module "eks" {
     }
   }
 }
+
+variable "aws_region" {
+    description = "Região utilizada para criar os recursos da AWS"
+    type = string
+    nullable = false
+}
