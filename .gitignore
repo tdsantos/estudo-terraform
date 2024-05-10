@@ -1,0 +1,24 @@
+# Diretórios locais .terraform
+**/.terraform/*
+
+# Arquivos de estado do Terraform
+*.tfstate
+*.tfstate.*
+
+# Arquivos de log de falhas
+crash.log
+crash.*.log
+
+# Excluir todos os arquivos .tfvars que podem conter dados sensíveis
+*.tfvars
+*.tfvars.json
+
+# Ignorar arquivos de substituição usados localmente
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignorar arquivos de configuração da CLI do Terraform
+.terraformrc
+terraform.rc
