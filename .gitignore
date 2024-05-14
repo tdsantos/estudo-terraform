@@ -22,3 +22,6 @@ override.tf.json
 # Ignorar arquivos de configuração da CLI do Terraform
 .terraformrc
 terraform.rc
+
+# ignorar plano de execução terraform plan -out plan
+plan
