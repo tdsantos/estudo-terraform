@@ -24,4 +24,4 @@ override.tf.json
 terraform.rc
 
 # ignorar plano de execução terraform plan -out plan
-plan
+*plan
