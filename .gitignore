@@ -10,8 +10,9 @@ crash.log
 crash.*.log
 
 # Excluir todos os arquivos .tfvars que podem conter dados sensíveis
-*.tfvars
-*.tfvars.json
+# Para o lab vamos permitir que o arquivo vá para o repositório
+#*.tfvars
+#*.tfvars.json
 
 # Ignorar arquivos de substituição usados localmente
 override.tf
@@ -22,6 +23,3 @@ override.tf.json
 # Ignorar arquivos de configuração da CLI do Terraform
 .terraformrc
 terraform.rc
-
-# ignorar plano de execução terraform plan -out plan
-*plan
