@@ -20,3 +20,11 @@ jobs:
 
       -  name: Checkout
          uses: actions/checkout@v4
+         
+      -  name: Terraform init
+         working-directory: ./src
+         run: terraform init -backend-config="bucket=${{ secrets.AWS_BUCKET_NAME }}" -backend-config="key=${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+
+      -  name: Terraform Apply
+         working-directory: ./src
+         run: terraform apply --auto-approve
